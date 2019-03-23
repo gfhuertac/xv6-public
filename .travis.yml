@@ -1,5 +1,5 @@
 language: c
-script: make
+script: make && make fs.img
 deploy:
   provider: releases
   api_key:
