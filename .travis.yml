@@ -1,0 +1,14 @@
+language: c
+script: make
+deploy:
+  provider: releases
+  api_key:
+    secure: aoGjB6E3Au+Sq/yw/UyFbND6yXE3Zk6GPnLlbzcm1vTk5/xIzvzFxuioWJROplOZPp304C3PvRFRDKKGa07UIbhvwOukxpScq/ZBM95c8/lthOgQVWR4Rha0TWPMcgYYUhPbzCZNeNvSzHXmwmU6GKpYMuhrquOWvlahkqAwmalo7XLSnlrJ1FgehHmfPJjSa8foJQ+CwGH7al8k5/hLEaELNMNV5O7gD2YyXCP71bKXokikp3+OwpRd3l297frCap5vWj+3MOdeoyWB2Z7vhLbt1nIkv4IRMNG312Ca9o2C/tcVT5xGLzO6onT8HcxYtIdF7Zq4zBr6cWMUvARanrc0DcLkWnATugGQjy/MeL2OifhbAkR8aF6DYGhi08lX28plhaVWejj4mMRn9AS/vpSqu0fWmlT8rXOcuw1b/AwqgokmFF3RyKuHv4VRbqjCv1e5mvzIwwMpyV+nSPPio6dxWrJBkVYnwc3f2TLeEquOqoABhPKkmgrKs7AUpc9dnCQN7AMuor5KOam9yNVC6PkKswbd04JSRjaWaEDxZyUCHacq0hyyrV1/0zFJ0qrtElkb+9529b/M2Xk85iUsPd7IA2kHtBuUS4lD5VPZpk0MZspG1m+sozjLLPD4/QrXALpAmXRIT6UfaPtF97VwIzLrtx+s4M53TuzzicZNX5U=
+  file:
+    - fs.img
+    - xv6.img
+  skip_cleanup: true
+  on:
+    repo: gfhuertac/xv6-public
+    branch: project_1
+    tags: true
